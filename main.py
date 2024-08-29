@@ -40,15 +40,3 @@ text = tk.Text(root, wrap=tk.WORD, font=("Helvetica", 12), fg="red", height=25, 
 text.pack(expand=True, fill=tk.BOTH)
 root.mainloop()
 
-file_menu = tk.Menu(menu)
-menu.add_cascade(label='File', menu=file_menu)
-file_menu.add_command(label='New', command=new_file)
-file_menu.add_command(label='Open', command=open_file)
-file_menu.add_command(label='Save', command=save_file)
-file_menu.add_separator()
-file_menu.add_command(label='Exit', command=root.quit)
-
-text = tk.Text(root, wrap=tk.WORD, font=("Helvetica", 12), fg="red", height=25, width=100)
-text.pack(expand=True, fill=tk.BOTH)
-root.mainloop()
-
